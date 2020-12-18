@@ -4,7 +4,7 @@
 
 [![Total Downloads](https://img.shields.io/packagist/dt/ammardev/laravel-wp-hash-driver.svg?style=flat-square)](https://packagist.org/packages/ammardev/laravel-wp-hash-driver)
 
-A package that supports Wordpress hashing in Laravel applications.
+A package that supports Wordpress hashing in Laravel applications. Useful when migrating Wordpress users to a Laravel project.
 
 ## Installation
 
