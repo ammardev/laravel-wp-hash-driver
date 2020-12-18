@@ -1,0 +1,59 @@
+{
+    "name": "ammardev/laravel-wp-hash-driver",
+    "description": "Supports Wordpress passwords hashing and checking in Laravel's Hash facade.",
+    "keywords": [
+        "wordpress",
+        "passwords",
+        "hash",
+        "hashing",
+        "laravel"
+    ],
+    "homepage": "https://github.com/ammardev/laravel-wp-hash-driver",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ammar Al-Khawaldeh",
+            "email": "me@ammar.dev",
+            "homepage": "https://ammar.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/support": "^6.0|^7.0|^8.0",
+        "illuminate/hashing": "^6.0|^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ammardev\\LaravelWpHashDriver\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ammardev\\LaravelWpHashDriver\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ammardev\\LaravelWpHashDriver\\LaravelWpHashDriverServiceProvider"
+            ],
+            "aliases": {
+                "LaravelWpHashDriver": "Ammardev\\LaravelWpHashDriver\\LaravelWpHashDriverFacade"
+            }
+        }
+    }
+}
