@@ -21,7 +21,6 @@
     ],
     "require": {
         "php": "^7.2|^8.0",
-        "hautelook/phpass": "^1.1",
         "illuminate/hashing": "^6.0|^7.0|^8.0",
         "illuminate/support": "^6.0|^7.0|^8.0"
     },
