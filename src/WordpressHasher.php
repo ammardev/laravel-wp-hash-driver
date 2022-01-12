@@ -2,7 +2,6 @@
 
 namespace Ammardev\LaravelWpHashDriver;
 
-use Hautelook\Phpass\PasswordHash;
 use Illuminate\Contracts\Hashing\Hasher;
 
 class WordpressHasher implements Hasher
